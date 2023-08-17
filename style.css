@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background-color: rgb(166, 166, 231);
+}
+h2{
+    margin: 3px;
+    font-size: 2.5rem;
+    /* width: 100vw; */
+    text-align: center;
+    -webkit-text-stroke: 1px rgb(159, 223, 240);
+    text-shadow: -2px -2px 0px black;
+    color: black;
+}
+/* .new{
+    text-align: center;
+    width: 100vw;
+} */
+.game_body{
+    margin: 30px auto;
+    width: 80vw;
+    height: 80vh;
+    border: 2px solid black;
+    background-color: rgb(121, 121, 228);
+
+}
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    background-color: rgb(121, 121, 228);
+
+}
+.element{
+    display: flex;
+    padding: 5px;   
+}
+.box{
+    margin: 0px 7px;
+    width: 30px;
+    background-color: white;
+    border-radius: 25%;
+    text-align: center;
+}
+#bottom{
+    width: 100%;
+    height: 94%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+
+}
+.bubble{
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(74, 74, 160);
+}
+.bubble:hover{
+    background-color: rgb(61, 61, 202);
+}
+.stats{
+    position: relative;
+    align-self: center;
+    left: 50%;
+    transform: translate(-50%);
+}
+#button{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 35%;
+    height: 20%;
+    font-size: 1rem;
+    background-color: rgb(74, 74, 160);
+}
+#button:hover{
+       background-color: rgb(61, 61, 202);
+}
+ /* to make responsive */
+@media (max-width: 800px) {
+    .details{
+        gap: 5px;
+    }
+}
+@media (max-width: 400px) {
+    .details{
+        gap: 1px;
+       
+    }
+}
+  
